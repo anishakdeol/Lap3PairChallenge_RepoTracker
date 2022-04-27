@@ -25,12 +25,6 @@ import '../css/repository.css'
                     {forks}
                     <span className="tooltip-text">forks</span>
                 </li>
-                {language &&
-                    <li className="tooltip">
-                        <FontAwesomeIcon className="icon" icon={faFileCode} />
-                        {language}
-                        <span className="tooltip-text">main language</span>
-                    </li>}
                 <li className="tooltip">
                     <FontAwesomeIcon className="icon" icon={faStar} />
                     {stargazers_count}
