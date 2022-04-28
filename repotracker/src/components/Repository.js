@@ -1,5 +1,5 @@
 import { faCodeBranch, faHistory } from '@fortawesome/free-solid-svg-icons';
-import { faFileCode, faEye, faDotCircle, faStar } from '@fortawesome/free-regular-svg-icons';
+import {faEye, faDotCircle, faStar } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import Commits from './Commits';
@@ -7,7 +7,7 @@ import '../css/repository.css'
 
     const Repository = ({ data }) => {
     const [isExpanded, setIsExpanded] = useState(false);
-    const { name, commits_url, forks, language, stargazers_count, open_issues, watchers } = data
+    const { name, commits_url, forks, stargazers_count, open_issues, watchers } = data
 
     const toggleExpand = () => setIsExpanded(prevState => !prevState)
 
